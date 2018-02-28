@@ -24,6 +24,7 @@
 
 ?>
 
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -31,6 +32,9 @@
     </head>
     <body>
         
+        <style>
+            @import url("styles.css");    
+        </style>
         
         <?php
         
