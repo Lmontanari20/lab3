@@ -20,7 +20,16 @@
     
     function draw_hands(&$deck, &$players)
     {
-        
-    }
+        for($ii = 0; $ii < 4; $ii++) {
+            
+            $handvalue = 0;
+            while($handvalue <= 35) {
+                $card = draw_card($deck);
+                $players[ii].push($card);
+                $handvalue += $card[0];
+                
+            }
+        }
+    }   
 
 ?>
