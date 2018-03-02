@@ -29,12 +29,18 @@
 <html>
     <head>
         <title> SilverJack </title>
+        <<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     </head>
     <body>
         
         <style>
             @import url("styles.css");    
         </style>
+        
+        <header>
+            <h1>SilverJack</h1>
+            
+        </header>
         
         <?php
         
