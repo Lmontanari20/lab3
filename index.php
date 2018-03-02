@@ -1,7 +1,6 @@
 <?php
 
     include ('functions.php');
-
     $deck = array(
         array("value", "suit", "img tag")
         );
@@ -24,12 +23,13 @@
 
 ?>
 
+<?php include ('elapsedTime.php'); ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <title> SilverJack </title>
-        <<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     </head>
     <body>
         
@@ -38,13 +38,13 @@
         </style>
         
         <header>
-            <h1>SilverJack</h1>
+            <font size = "8"><h1>Silverjack</h1></font>
             
         </header>
         
         <?php
         
-        /* Demonstrate Draw card
+         /*Demonstrate Draw card
             echo "<div>";
             
             for($i = 0; $i < 52; $i++)
@@ -59,10 +59,27 @@
             
             echo "<p>" . draw_card($deck) . "</p>";
             echo "<p>" . draw_card($deck) . "</p>";
-            
-        */
+        */    
+        
         
         ?>
+        
+        <div id = "elapsedTime">
+            Elapsed Time: <?= displayElapsedTime() ?>
+        </div>
+        
+            <footer>
+                <hr>
+                CST336 Internet Programming. 2018 &copy; Team 8 <br />
+                <strong> Disclaimer:</strong>
+                The information in this website is fictitous. It's used for academic purposes.
+                    
+                <figure>
+                        
+                     <img src = "csumbLogo/csumbLogo.png" alt = "csumb logo"
+                        
+                </figure>
+            </footer>
 
     </body>
 </html>

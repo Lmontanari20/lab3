@@ -7,3 +7,13 @@ header{
     font-family: 'Oswald', sans-serif;
     color: yellow;
 }
+
+#elapsedTime{
+    color: yellow;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
