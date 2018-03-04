@@ -42,7 +42,7 @@
         {
             $cpt=0;
             
-            echo "<div>";
+            echo "<div>" . $currplay;
             
             foreach($currhand as $currcard)
             {  
