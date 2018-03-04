@@ -66,7 +66,7 @@
         }
         foreach($winner as $win)
         {
-            echo $win+"WIN"+$winnerpoint+"points";
+            echo $win."WIN".$winnerpoint."points";
         }
     }
 
