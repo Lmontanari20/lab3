@@ -25,49 +25,48 @@
             $handvalue = 0;
             while($handvalue <= 35) {
                 $card = draw_card($deck);
-                $players[ii].push($card);
+                $players[ii][] = $card;
                 $handvalue += $card[0];
                 
             }
         }
     }
+    
     function get_winner(&$player)
     {
         $winnerpoint=0;
-       $howmuchpoint=0;
-       $winner;
-        foreach($player as $currplayer)
+        $howmuchpoint=0;
+        $winner = '';
+        
+        foreach ($player as $currplay => $currhand)
         {
             $cpt=0;
-            foreach($currplay as $currhand)
+            
+            echo "<div>";
+            
+            foreach($currhand as $currcard)
             {
-                foreach($currhand as $currcard)
-                {   $howmuchpoint+=$currcard[0];    
-                    $cpt+=$currcard[0];
-                    echo $currcard[3];
-                    
-                }
-                echo $cpt;
-                if($cpt==$winnerpoint&&cpt<42)
-                {
-                    $winner[]=$currplay;
-                }
-                if($cpt>$winnerpoint && $cpt<42)
-                {
-                    $winnerpoint=$cpt;
-                    $winner=null;
-                    $winner=$currplay;
-                    
-                }
+                $howmuchpoint = $howmuchpoint + $currcard[0];    
+                $cpt = $cpt + $currcard[0];
+                echo $currcard[2];
+            }
+            
+            echo $cpt;
+            echo "</div>";
+            
+            if($cpt>$winnerpoint && $cpt<42)
+            {
+                $winnerpoint = $cpt;
+                $winner = $currplay;
                 
             }
-            echo "<br/>";
+                
+        }
+        
+        echo "<br/>";
             
-        }
-        foreach($winner as $win)
-        {
-            echo $win."WIN".$winnerpoint."points";
-        }
+        echo $winner . " Wins! They earned " . ($howmuchpoint - $winnerpoint) . " points!!!";
+        
     }
 
 ?>

@@ -20,6 +20,8 @@
             $deck[] = array($i, $value, ("<img src='cards/" . $value . "/" . $i . ".png' />"));
         }
     }
+    
+    draw_hands($deck, $players);
 
 ?>
 
@@ -61,6 +63,12 @@
             echo "<p>" . draw_card($deck) . "</p>";
         */    
         
+        
+        ?>
+        
+        <?php
+        
+            get_winner($players);
         
         ?>
         
