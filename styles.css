@@ -1,11 +1,17 @@
 body{
     background-image: url("playingTableImage/playingTable.jpg");
+    color: yellow;
 }
 
 header{
     text-align: center;
     font-family: 'Oswald', sans-serif;
     color: yellow;
+}
+
+#logo{
+    border-radius: 10px;
+    border-color: yellow;
 }
 
 #elapsedTime{

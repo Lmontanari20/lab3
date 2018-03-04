@@ -61,7 +61,7 @@
                     
                 <figure>
                         
-                     <img src = "csumbLogo/csumbLogo.png" alt = "csumb logo"
+                     <img id = "logo" src = "csumbLogo/csumbLogo.png" alt = "csumb logo"/>
                         
                 </figure>
             </footer>
