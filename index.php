@@ -70,7 +70,10 @@
             get_winner($players);
         
         ?>
+        <div>
         
+       <h2><a href="index.php">Play again?</a></h2>
+        </div>
         <div id = "elapsedTime">
             Elapsed Time: <?= displayElapsedTime($start) ?>
         </div>
