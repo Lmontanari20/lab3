@@ -30,6 +30,44 @@
                 
             }
         }
-    }   
+    }
+    function get_winner(&$player)
+    {
+        $winnerpoint=0;
+       $howmuchpoint=0;
+       $winner;
+        foreach($player as $currplayer)
+        {
+            $cpt=0;
+            foreach($currplay as $currhand)
+            {
+                foreach($currhand as $currcard)
+                {   $howmuchpoint+=$currcard[0];    
+                    $cpt+=$currcard[0];
+                    echo $currcard[3];
+                    
+                }
+                echo $cpt;
+                if($cpt==$winnerpoint&&cpt<42)
+                {
+                    $winner[]=$currplay;
+                }
+                if($cpt>$winnerpoint && $cpt<42)
+                {
+                    $winnerpoint=$cpt;
+                    $winner=null;
+                    $winner=$currplay;
+                    
+                }
+                
+            }
+            echo "<br/>";
+            
+        }
+        foreach($winner as $win)
+        {
+            echo $win+"WIN"+$winnerpoint+"points";
+        }
+    }
 
 ?>
