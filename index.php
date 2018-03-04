@@ -45,6 +45,28 @@
         
         <?php
         
+         /*Demonstrate Draw card
+            echo "<div>";
+            
+            for($i = 0; $i < 52; $i++)
+            {
+                $card = draw_card($deck);
+                echo "<b>" . $card[0] . " of " . $card[1] . "</b><br/>";
+                echo $card[2];
+                echo "<br />";
+            }
+            
+            echo "</div>";
+            
+            echo "<p>" . draw_card($deck) . "</p>";
+            echo "<p>" . draw_card($deck) . "</p>";
+        */    
+        
+        
+        ?>
+        
+        <?php
+        
             get_winner($players);
         
         ?>
@@ -61,7 +83,7 @@
                     
                 <figure>
                         
-                     <img id = "logo" src = "csumbLogo/csumbLogo.png" alt = "csumb logo"/>
+                     <img id = "logo" src = "csumbLogo/csumbLogo.png" alt = "csumb logo" />
                         
                 </figure>
             </footer>

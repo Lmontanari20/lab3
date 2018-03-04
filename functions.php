@@ -5,7 +5,7 @@
         $elapsedSecs = microtime(true) - $starting_microtime;
         echo $elapsedSecs . " seconds";
     }
-
+    
     function draw_card(&$deck)
     {
         if(count($deck) > 1)
