@@ -20,6 +20,7 @@ footer{
 
 div {
     display: inline-block;
-    width: 80%;
-    margin: 0;
+    width: 50%;
+    margin-left: 24%;
+    margin-right: 24%;
 }
