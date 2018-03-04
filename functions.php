@@ -20,12 +20,12 @@
     
     function draw_hands(&$deck, &$players)
     {
-        for($ii = 0; $ii < 4; $ii++) {
+        foreach($players as $key => $value) {
             
             $handvalue = 0;
             while($handvalue <= 35) {
                 $card = draw_card($deck);
-                $players[ii][] = $card;
+                $players[$key][] = $card;
                 $handvalue += $card[0];
                 
             }
@@ -45,27 +45,24 @@
             echo "<div>";
             
             foreach($currhand as $currcard)
-            {
-                $howmuchpoint = $howmuchpoint + $currcard[0];    
+            {  
                 $cpt = $cpt + $currcard[0];
                 echo $currcard[2];
             }
             
             echo $cpt;
-            echo "</div>";
+            echo "</div> <br />";
             
-            if($cpt>$winnerpoint && $cpt<42)
+            if($cpt>$winnerpoint && $cpt<=42)
             {
                 $winnerpoint = $cpt;
                 $winner = $currplay;
-                
             }
-                
+            
+            $howmuchpoint = $howmuchpoint + $cpt;
         }
         
-        echo "<br/>";
-            
-        echo $winner . " Wins! They earned " . ($howmuchpoint - $winnerpoint) . " points!!!";
+        echo "<br/>" . $winner . " Wins! They earned " . ($howmuchpoint - $winnerpoint) . " points!!!";
         
     }
 
