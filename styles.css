@@ -1,5 +1,6 @@
 body{
     background-image: url("playingTableImage/playingTable.jpg");
+    color: yellow;
 }
 
 header{
@@ -22,4 +23,9 @@ div {
     display: inline-block;
     width: 80%;
     margin: 0;
+}
+
+#logo{
+    border-radius: 10px;
+    border-color: yellow;
 }
